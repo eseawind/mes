@@ -1,52 +1,78 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
 	<title>qcadoo/MES @ GitHub</title>
-	
+
 	<style type="text/css">
-		body {
-  		margin-top: 1.0em;
-  		background-color: #1be47f;
-		  font-family: "Helvetica,Arial,FreeSans";
-  		color: #ffffff;
+	html, body {
+		background-color: #9b9b9b;
+		font-family: "Helvetica,Arial,FreeSans";
+   		color: #ffffff;
+   		margin: 0;
+   		padding: 0;
     }
     #container {
-      margin: 0 auto;
-      width: 700px;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 800px;
+		background: #ffffff;
+		border: solid black 1px;
+		padding: 0;
     }
-		h1 { font-size: 3.8em; color: #e41b80; margin-bottom: 3px; }
-		h1 .small { font-size: 0.4em; }
-		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #e41b80; }
+    #container #header {
+    	background: #1DA500;
+    	height: 100px;
+    	margin: 0px;
+    	border-bottom: solid black 1px;
+    }
+    #container #header #download { 
+    	float: right; 
+    	display: none;
+    }
+	#container #header #logo { 
+		width: 100px;
+		height: 100px;
+		background-color: red;
+	}
+    
+h1 { font-size: 3.8em; color: #e41b80; margin-bottom: 3px; }
+h1 .small { font-size: 0.4em; }
+h1 a { text-decoration: none }
+h2 { font-size: 1.5em; color: #e41b80; }
     h3 { text-align: center; color: #e41b80; }
     a { color: #e41b80; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-		pre { background: #000; color: #fff; padding: 15px;}
+pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
-	</style>
-	
+</style>
+
 </head>
 
 <body>
-  <a href="http://github.com/qcadoo/MES"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+  <a href="http://github.com/qcadoo/MES">
+  	<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+  	</a>
 
-  <div id="container">
+	<div id="container">
+		<div id="header">
+    		<div id="download">
+		      <a href="http://github.com/qcadoo/MES/zipball/master">
+		        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+		      <a href="http://github.com/qcadoo/MES/tarball/master">
+		        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+			</div>
 
-    <div class="download">
-      <a href="http://github.com/qcadoo/MES/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/qcadoo/MES/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="http://github.com/qcadoo/MES">MES</a>
-      <span class="small">by <a href="http://github.com/qcadoo">qcadoo</a></span></h1>
+			<div id="logo"></div>
+			
+    <!--<h1><a href="http://github.com/qcadoo/MES">MES</a>
+      <span class="small">by <a href="http://github.com/qcadoo">qcadoo</a></span></h1>-->
+     </div>
 
     <div class="description">
       TBA
@@ -61,7 +87,8 @@
 <h2>Authors</h2>
 <p>TBA</p>
 <h2>Contact</h2>
-<p>Qcadoo (amazon@qcadoo.com)<br/>      </p>
+<p>Qcadoo (amazon@qcadoo.com)
+<br/> </p>
 
 
     <h2>Download</h2>
