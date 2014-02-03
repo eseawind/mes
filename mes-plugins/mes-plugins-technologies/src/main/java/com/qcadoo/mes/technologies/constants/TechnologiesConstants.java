@@ -49,6 +49,8 @@ public final class TechnologiesConstants {
 
     public static final String MODEL_TECHNOLOGY_GROUP = "technologyGroup";
 
+    public static final String MODEL_PRODUCT_STRUCTURE_TREE_NODE = "productStructureTreeNode";
+
     public static final String OPERATION_COMPONENTS = "operationComponents";
 
     public static final String FIELD_ENTITY_TYPE = "entityType";
