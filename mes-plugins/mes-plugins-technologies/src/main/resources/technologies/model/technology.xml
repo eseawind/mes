@@ -55,7 +55,7 @@
 			cascade="delete" />
 			
 		<tree name="productStructureTree" model="productStructureTreeNode"
-			joinField="technology" cascade="delete" copyable="true" persistent="false"/>
+			joinField="technology" cascade="delete" copyable="true"/>
 	</fields>
 	<hooks>
 		<validatesWith class="com.qcadoo.mes.technologies.validators.TechnologyValidators"
