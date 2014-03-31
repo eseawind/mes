@@ -40,6 +40,8 @@
                     	var save = #{window}.getRibbonItem("actions.save");
 						var saveBack = #{window}.getRibbonItem("actions.saveBack");
 						var saveNew = #{window}.getRibbonItem("actions.saveNew");
+						var acceptRecord = #{window}.getRibbonItem("status.acceptRecord");
+						var cancelRecord = #{window}.getRibbonItem("status.cancelRecord");
 						
 						QCDTrack.track(
 								save,
@@ -58,8 +60,19 @@
 								"onClick",
 								 QCDTrack.eventResolver.formStateDependent( "addProductionRecord" , "modifyProductionRecord") 
 						);
+						
+						QCDTrack.track(
+								acceptRecord,
+								"onClick",
+								"acceptProductionRecord"
+						);
                     
-                    
+                    	QCDTrack.track(
+								cancelRecord,
+								"onClick",
+								"cancelProductionRecord"
+						);
+						
 						this.changeRecordState = function(eventPerformer, ribbonItemName) {
 							var ribbonItem = #{window}.getRibbonItem("status." + ribbonItemName);
 							var newState = ribbonItem.forState;

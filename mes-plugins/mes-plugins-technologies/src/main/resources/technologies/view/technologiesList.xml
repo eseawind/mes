@@ -41,6 +41,28 @@
 		<component type="grid" name="technologies" reference="grid">
 			<script>
 				<![CDATA[
+					var accept = #{window}.getRibbonItem("status.acceptTechnology");
+					var cancel = #{window}.getRibbonItem("status.cancelTechnology");
+					var check = #{window}.getRibbonItem("status.checkTechnology");
+					
+					QCDTrack.track(
+							accept,
+							"onClick",
+							"acceptTechnology" 
+					);
+					
+					QCDTrack.track(
+							cancel,
+							"onClick",
+							"cancelTechnology" 
+					);
+					
+					QCDTrack.track(
+							check,
+							"onClick",
+							"checkTechnology" 
+					);
+				
 					var toggleRibbonItems = ["actions.delete"];
 		
 					this.addOnChangeListener({

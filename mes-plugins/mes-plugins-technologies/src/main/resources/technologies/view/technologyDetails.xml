@@ -59,6 +59,10 @@
 						var saveBack = #{window}.getRibbonItem("actions.saveBack");
 						var saveNew = #{window}.getRibbonItem("actions.saveNew");
 						
+						var accept = #{window}.getRibbonItem("status.acceptTechnology");
+						var cancel = #{window}.getRibbonItem("status.cancelTechnology");
+						var check = #{window}.getRibbonItem("status.checkTechnology");
+						
 						QCDTrack.track(
 								save,
 								"onClick",
@@ -77,7 +81,23 @@
 								 QCDTrack.eventResolver.formStateDependent( "addTechnology" , "modifyTechnology") 
 						);
 					
-						
+						QCDTrack.track(
+							accept,
+							"onClick",
+							"acceptTechnology" 
+						);
+					
+						QCDTrack.track(
+								cancel,
+								"onClick",
+								"cancelTechnology" 
+						);
+					
+						QCDTrack.track(
+								check,
+								"onClick",
+								"checkTechnology" 
+						);
 					]]>
 				</script>
 				<listener event="changeState"

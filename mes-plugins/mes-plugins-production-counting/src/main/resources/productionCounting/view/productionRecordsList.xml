@@ -71,6 +71,18 @@
 					var acceptRecord = #{window}.getRibbonItem("status.acceptRecord");
 					var cancelRecord = #{window}.getRibbonItem("status.cancelRecord");
 					
+					QCDTrack.track(
+							acceptRecord,
+							"onClick",
+							"acceptProductionRecord"
+					);
+                    
+                    QCDTrack.track(
+							cancelRecord,
+							"onClick",
+							"cancelProductionRecord"
+					);
+					
 					var listener = {
 						onChange: function(selectedEntitiesArray) {
 							var deleteable = true;
